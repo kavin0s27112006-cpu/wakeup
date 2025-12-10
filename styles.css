@@ -1,0 +1,66 @@
+/* Custom Styles */
+
+/* SPA transitions */
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Utilities */
+.hidden {
+    display: none !important;
+}
+
+/* Nav Active State */
+.nav-btn.active {
+    color: #4f46e5;
+    /* Primary */
+}
+
+.dark .nav-btn.active {
+    color: #818cf8;
+    /* Secondary */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #4b5563;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Toggle Switch Classes */
+.toggle-checkbox:checked {
+    right: 0;
+    border-color: #68D391;
+}
+
+.toggle-checkbox:checked+.toggle-label {
+    background-color: #68D391;
+}
